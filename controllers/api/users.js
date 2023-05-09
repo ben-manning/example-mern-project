@@ -9,6 +9,7 @@ module.exports = {
 };
 
 async function create(req, res) {
+  console.log(req.body) // the information from the form on the website
   try {
     // Add the user to the db
     const user = await User.create(req.body);
